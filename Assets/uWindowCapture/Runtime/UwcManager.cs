@@ -160,6 +160,8 @@ public class UwcManager : MonoBehaviour
     {
         Lib.SetLogFunc(null);
         Lib.SetErrorFunc(null);
+        Resources.UnloadUnusedAssets();
+        Lib.Finalize();
     }
 
     IEnumerator Render()
